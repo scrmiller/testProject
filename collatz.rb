@@ -7,7 +7,7 @@ The two rules are as follows:
 1) If the number is even divide it by two
 2) If the number is odd multiply it by 3 and add 1.
 
-Below is a simple script that caculates this for the natural number 40 and outputs to console.	
+Below is a simple script prompts the user for an input and caculates collatz path outputing to console.	
 
 =end
 
@@ -25,4 +25,6 @@ def collatz(input)
    end
 end
 
-collatz(40)
+puts "Enter a natural number: "
+response = gets.chomp!.to_i
+collatz(response)
