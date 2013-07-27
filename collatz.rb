@@ -13,9 +13,7 @@ Below is a simple script prompts the user for an input and caculates collatz pat
 
 def collatz(input)
    puts "Beginning collatz run..."
-
    out = File.new("output.txt","w")
-
    while input >= 1
    	puts input
    	out.write("#{input}\n")
@@ -27,7 +25,6 @@ def collatz(input)
 		input = input*3+1
 	  end
    end
-
    out.close
 end
 
